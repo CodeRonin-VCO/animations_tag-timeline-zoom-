@@ -1,0 +1,46 @@
+@use "../abstracts/" as *;
+
+.home {
+
+    section {
+        width: 90%;
+        margin: 2rem auto;
+        padding: 2.4rem;
+        border-radius: .8rem;
+
+        @media screen and (min-width:960px) {
+            width: 70%;
+            margin: 5rem auto;
+            padding: 5rem;
+        }
+
+        h2, p {
+            padding-bottom: 1rem;
+        }
+    }
+    .install {
+        display: flex;
+
+        > div {
+            width: 50%;
+
+            &:first-child {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+
+        .pic-install--light, .pic-install--dark {
+            display: none;
+
+            &.active {
+                display: inline-block;
+            }
+        }
+    }
+
+
+}

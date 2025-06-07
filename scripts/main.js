@@ -1,0 +1,45 @@
+// ~~~~ DEBUT - mode sombre ou lumineux ~~~~
+
+// ==== Sélections ====
+const body              = document.querySelector("body");
+const darkTheme         = document.querySelector(".theme--dark");
+const lightTheme        = document.querySelector(".theme--light");
+const picInstallLight   = document.querySelector(".pic-install--light");
+const picInstallDark    = document.querySelector(".pic-install--dark");
+
+// ==== Evénements ====
+darkTheme.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    darkTheme.classList.remove("active")
+    lightTheme.classList.add("active")
+
+    body.classList.remove("dark")
+    body.classList.add("light")
+
+    picInstallDark.classList.remove("active")
+    picInstallLight.classList.add("active")
+})
+lightTheme.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    lightTheme.classList.remove("active")
+    darkTheme.classList.add("active")
+
+    body.classList.remove("light")
+    body.classList.add("dark")
+
+    picInstallDark.classList.add("active")
+    picInstallLight.classList.remove("active")
+})
+
+// ~~~~ DEBUT - Burger popup ~~~~
+const burger    = document.querySelector(".burger");
+const menuPopup = document.querySelector(".mobile-popup");
+
+burger.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    menuPopup.classList.toggle("active");
+    burger.classList.toggle("active");
+})

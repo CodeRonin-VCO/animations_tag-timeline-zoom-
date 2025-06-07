@@ -1,0 +1,116 @@
+@use "../abstracts/" as *;
+
+body {
+    font-family: "Montserrat Alternates";
+
+    &.light {
+        color: $light-theme-txt;
+        background-color: $light-theme;
+
+        .theme {
+            color: $light-primary;
+        }
+        a {
+            color: $light-primary-dark3;
+            text-decoration: none;
+            &:not(:nth-of-type(4), :last-child)::before {
+                background-color: $light-primary-dark1;
+            }
+            &:hover {
+                color: $light-primary-dark1;
+            }
+        }
+        .menu-desktop {
+            background-color: $light-theme-dark1;
+        }
+        .logo--dark {
+            display: none;
+        }
+        .menu-mobile, section {
+            background-color: $light-theme-dark1;
+
+            .burger {
+                border: .2rem solid $light-primary-dark2;
+            }
+            .line {
+                background-color: $light-primary-dark2;
+            }
+        }
+        .btn {
+            color: $light-theme-txt;
+            background-color: $light-primary-dark1;
+            border: .1rem solid $light-theme-txt;
+
+            &:hover {
+                color: $light-theme-txt;
+                background-color: $light-primary;
+            }
+        }
+        .box-section {
+            background-color: transparent;
+            border: .1rem solid $light-theme-txt;
+        }
+        dt, strong {
+            color: $light-primary-dark3;
+        }
+        h2 {
+            color: $light-primary-dark1;
+        }
+    }
+    &.dark {
+        color: $dark-theme-txt;
+        background-color: $dark-theme;
+
+        .theme {
+            color: $dark-primary;
+        }
+        a {
+            color: $dark-primary-light3;
+            text-decoration: none;
+
+            &:not(:nth-of-type(4), :last-child)::before {
+                background-color: $dark-primary-light1;
+            }
+            &:hover {
+                color: $dark-primary-light1;
+            }
+        }
+        .menu-desktop {
+            background-color: $dark-theme-light1;
+        }
+        .logo--light {
+            display: none;
+        }
+        .menu-mobile, section {
+            background-color: $dark-theme-light1;
+
+            .burger {
+                border: .2rem solid $dark-primary-light2;
+            }
+            .line {
+                background-color: $dark-primary-light2;
+            }
+        }
+        
+        .btn {
+            color: $light-theme-txt;
+            background-color: $dark-primary-light1;
+            border: .1rem solid $dark-theme-txt;
+
+            &:hover {
+                color: $light-theme-txt;
+                background-color: $dark-primary;
+            }
+        }
+        .box-section {
+            background-color: transparent;
+            border: .1rem solid $dark-theme-txt;
+        }
+        dt, strong {
+            color: $dark-primary-light3;
+        }
+        h2 {
+            color: $dark-primary-light1;
+        }
+    }
+}
