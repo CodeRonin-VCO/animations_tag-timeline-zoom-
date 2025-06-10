@@ -10,4 +10,4 @@ Deux pages :
   - Une page de démo
 
 --- Licence ---
-Gratuite : https://gsap.com/pricing/
+Bien que GSAP soit gratuit pour la plupart des utilisations, certaines fonctionnalités avancées ou utilisations commerciales peuvent nécessiter une licence payante.
