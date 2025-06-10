@@ -389,7 +389,7 @@ header .theme.active {
 .home .to-reveal {
   opacity: 0;
   transform: translateY(5rem);
-  transition: 0.3s all ease-out;
+  transition: 0.5s all ease-out;
 }
 .home .revealed {
   opacity: 1;
