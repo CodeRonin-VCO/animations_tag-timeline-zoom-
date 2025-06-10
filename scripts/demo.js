@@ -2,10 +2,10 @@
 
 // use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger, GSDevTools)
     // gsap code here!
 
-    gsap.timeline({
+    let tl = gsap.timeline({
         // yes, we can add it to an entire timeline!
         scrollTrigger: {
             trigger: '.wrapper',
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
     
     // add animations and labels to the timeline
-    .to("img", {
+    tl.to("img", {
         scale: 2,
         z: 350,
         ease: "power1.inOut",
@@ -26,4 +26,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scale: 1.1,
         ease: "power1.inOut",
     }, "<"); // "<" indique que l'animation commence en même temps
+    
 });

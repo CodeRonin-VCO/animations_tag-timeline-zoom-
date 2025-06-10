@@ -178,6 +178,20 @@ dl, dt, dd {
   align-self: center;
 }
 
+body {
+  transition: opacity 1s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+.next-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   padding: 3rem;
   display: flex;
@@ -354,6 +368,9 @@ header .theme.active {
 }
 .home .install .pic-install--light.active, .home .install .pic-install--dark.active {
   display: inline-block;
+}
+.home .next-page {
+  width: 30%;
 }
 
 .demo .wrapper {

@@ -43,3 +43,16 @@ burger.addEventListener("click", function (event) {
     menuPopup.classList.toggle("active");
     burger.classList.toggle("active");
 })
+
+// ~~~~ DEBUT - Page fade in/out ~~~~
+document.querySelector('.animated-link').addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // Ajoute une classe pour déclencher l'animation de fondu
+    document.body.classList.add('fade-out');
+
+    // Attend la fin de l'animation avant de naviguer
+    setTimeout(function() {
+        window.location.href = e.target.getAttribute('href');
+    }, 1000); // Correspond à la durée de l'animation CSS
+});
