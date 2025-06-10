@@ -375,8 +375,10 @@ header .theme.active {
 .home .install .pic-install--light.active, .home .install .pic-install--dark.active {
   display: inline-block;
 }
-.home .next-page {
-  width: 30%;
+@media screen and (min-width: 960px) {
+  .home .next-page {
+    width: 30%;
+  }
 }
 .home li {
   margin: 1rem 0;

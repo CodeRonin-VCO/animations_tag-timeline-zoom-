@@ -42,7 +42,10 @@
         }
     }
     .next-page {
-        width: 30%;
+
+        @media screen and (min-width:960px) {
+            width: 30%;
+        }
     }
     li {
         margin: 1rem 0;
