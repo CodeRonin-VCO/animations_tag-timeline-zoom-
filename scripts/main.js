@@ -56,3 +56,21 @@ document.querySelector('.animated-link').addEventListener('click', function(e) {
         window.location.href = e.target.getAttribute('href');
     }, 1000); // Correspond à la durée de l'animation CSS
 });
+
+// ~~~~ DEBUT - Reveal section ~~~~
+const readyToReveal = document.querySelectorAll(".to-reveal");
+
+function letReveal() {
+    readyToReveal.forEach(function (elementReveal) {
+        scrolled = window.scrollY;
+        let distanceToScroll = (elementReveal.offsetTop + (elementReveal.offsetHeight /2)) - window.innerHeight;
+        if (scrolled > distanceToScroll) {
+            elementReveal.classList.add("revealed");
+        }
+    })
+}
+letReveal();
+
+window.addEventListener("scroll", function () {
+    letReveal()
+})

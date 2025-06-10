@@ -114,6 +114,9 @@ body.light dt, body.light strong {
 body.light h2 {
   color: #89bd3a;
 }
+body.light li > a:hover strong {
+  color: #87CF02;
+}
 body.dark {
   color: #fff;
   background-color: #2F4F4F;
@@ -164,6 +167,9 @@ body.dark dt, body.dark strong {
 }
 body.dark h2 {
   color: #f8b553;
+}
+body.dark li > a:hover strong {
+  color: #F0A00C;
 }
 
 dl, dt, dd {
@@ -371,6 +377,21 @@ header .theme.active {
 }
 .home .next-page {
   width: 30%;
+}
+.home li {
+  margin: 1rem 0;
+}
+.home li > a {
+  text-decoration: underline;
+}
+.home .to-reveal {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: 0.3s all ease-out;
+}
+.home .revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .demo .wrapper {

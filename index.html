@@ -53,7 +53,7 @@
             <p>La bibliothèque d'animation JavaScript GSAP (<em>GreenSock Animation Platform</em>) a été créée par <strong>Jack Doyle</strong>, également connu sous le pseudonyme GreenSock. Il est développeur et entrepreneur et a développé GSAP pour répondre au besoin d'animations performantes et fluides sur le web.</p>
             <p>La première version de GSAP a été <strong>introduite en 2006</strong>. Depuis, elle est devenue une des bibliothèques d'animation les plus populaires du web.</p>
         </section>
-        <section class="introduction">
+        <section class="introduction to-reveal">
             <h2>Introduction</h2>
             <p>GSAP a été spécialement conçu pour créer des animations haute performance sur le web.</p>
             <p>Cette plateforme est largement reconnue pour sa capacité à animer presque tout ce qui est numérique, y compris les propriétés CSS, les éléments SVG, et bien plus encore.</p>
@@ -61,7 +61,7 @@
             <p>Que ce soit pour des transitions simples ou des séquences d'animation élaborées, GSAP offre les outils nécessaires pour donner vie aux interfaces utilisateur de manière dynamique et engageante.</p>
             <p>De plus, avec des plugins comme ScrollTrigger, GSAP permet de créer des animations interactives qui répondent aux actions de l'utilisateur, comme le défilement de la page, <strong>ouvrant ainsi un monde de possibilités créatives pour le design web moderne.</strong></p>
         </section>
-        <section class="avantages box-section">
+        <section class="avantages box-section to-reveal">
             <h2>Avantages de GSAP</h2>
             <dl>
                 <dt>Performances</dt>
@@ -84,7 +84,7 @@
             </dl>
             
         </section>
-        <section class="inconvenients">
+        <section class="inconvenients to-reveal">
             <h2>Inconvénients</h2>
             <dl>
                 <dt>Taille du fichier</dt>
@@ -100,28 +100,30 @@
                 <dd>Pour des projets simples avec des besoins d'animation minimaux, GSAP peut sembler excessif par rapport à des solutions CSS simples. (ex.: Carrousel)</dd>
             </dl>
         </section>
-        <section class="courbe box-section">
+        <section class="courbe box-section to-reveal">
             <h2>Courbe d'apprentissage</h2>
             <p> Les nouveaux utilisateurs peuvent <strong>rapidement créer des animations simples</strong> et voir des <strong>résultats satisfaisants</strong> avec peu de code, ce qui rend l'entrée en matière très encourageante.</p>
             <p>Cependant, à <strong>mesure que l'on progresse, la courbe devient plus raide</strong>. Maîtriser les fonctionnalités avancées de GSAP, comme les timelines complexes, les plugins spécialisés, et l'optimisation des performances, demande un investissement significatif en temps et en pratique. Devenir un expert en GSAP implique non seulement de comprendre comment créer des animations fluides et interactives, mais aussi de savoir comment étendre ses fonctionnalités et optimiser son utilisation pour des projets de grande envergure.</p>
             <p>Ainsi, bien que GSAP soit accessible aux débutants, atteindre un niveau d'expertise nécessite de surmonter des défis techniques et conceptuels plus exigeants.</p>
         </section>
-        <section class="theorie">
+        <section class="theorie to-reveal">
             <h2>Un petit point théorie</h2>
             <h3>Deux concepts fondamentaux de GSAP :</h3>
             <ol>
-                <li>Un <strong>tween</strong> est ce qui fait tout le travail d'animation - considérez-le comme un définisseur de propriétés très performant. Vous introduisez des cibles (les objets que vous souhaitez animer), une durée et toutes les propriétés que vous souhaitez animer. Lorsque la tête de lecture se déplace vers une nouvelle position, elle détermine quelles sont les valeurs des propriétés à ce moment-là et les applique en conséquence.</li>
-                <li>Une <strong>timeline</strong> est une séquence qui permet de contrôler plusieurs tweens. Les timelines sont essentielles pour orchestrer des animations complexes, où plusieurs tweens doivent être synchronisés ou exécutés dans un ordre spécifique. Une timeline agit comme un conteneur pour les tweens, permettant de les organiser, de les superposer, et de les contrôler collectivement. Cela permet de créer des animations plus sophistiquées et mieux structurées, en gérant le timing et la séquence des animations de manière précise. Une timeline peut contenir d'autres timelines.</li>
+                <li>Un <a href="https://gsap.com/docs/v3/GSAP/Tween"><strong>tween</strong></a> est ce qui fait tout le travail d'animation - considérez-le comme un définisseur de propriétés très performant. Vous introduisez des cibles (les objets que vous souhaitez animer), une durée et toutes les propriétés que vous souhaitez animer. Lorsque la tête de lecture se déplace vers une nouvelle position, elle détermine quelles sont les valeurs des propriétés à ce moment-là et les applique en conséquence.</li>
+                <li>Une <a href="https://gsap.com/docs/v3/GSAP/Timeline"><strong>timeline</strong></a> est une séquence qui permet de contrôler plusieurs tweens. Les timelines sont essentielles pour orchestrer des animations complexes, où plusieurs tweens doivent être synchronisés ou exécutés dans un ordre spécifique. Une timeline agit comme un conteneur pour les tweens, permettant de les organiser, de les superposer, et de les contrôler collectivement. Cela permet de créer des animations plus sophistiquées et mieux structurées, en gérant le timing et la séquence des animations de manière précise. Une timeline peut contenir d'autres timelines.</li>
             </ol>
+            <br>
             <h3>Quelques autres notions intéressantes</h3>
             <ul>
-                <li><strong>Eases</strong> : détermine le rythme de l'animation. Il existe une variété de fonctions d'easing, comme Power0, Power1, Power2, Back, Elastic, etc.</li>
-                <li><strong>Callbacks et événements</strong> : GSAP permet de définir des fonctions de rappel (callbacks) à différents moments de l'animation, comme au début (onStart), à la fin (onComplete), ou à chaque mise à jour (onUpdate). Cela permet d'exécuter du code JavaScript en réponse à l'état de l'animation.</li>
-                <li><strong>GSDevTools</strong> : est un outil de développement visuel qui permet de créer une interface utilisateur pour contrôler et déboguer les animations GSAP. Cela peut être très utile pour ajuster et visualiser les animations en temps réel.</li>
-                <li><strong>Plugins </strong> : GSAP propose plusieurs plugins pour étendre ses fonctionnalités, comme ScrollTrigger pour créer des animations déclenchées par le défilement de la page, Draggable pour rendre les éléments déplaçables par l'utilisateur, et MotionPathPlugin pour animer des éléments le long d'un chemin SVG.</li>
+                <li><a href="https://gsap.com/resources/getting-started/Easing"><strong>Eases</strong></a> : détermine le rythme de l'animation. Il existe une variété de fonctions d'easing, comme Power0, Power1, Power2, Back, Elastic, etc.</li>
+                <li><a href="https://gsap.com/resources/getting-started/Staggers"><strong>Staggers </strong></a> :  permettent d'animer plusieurs objets avec un décalage temporel entre chacun. Cela est utile pour créer des effets de séquence ou de cascade sur une liste d'éléments.</li>
+                <li><a href="https://gsap.com/resources/getting-started/control"><strong>Callbacks et événements</strong></a> : GSAP permet de définir des fonctions de rappel (callbacks) à différents moments de l'animation, comme au début (onStart), à la fin (onComplete), ou à chaque mise à jour (onUpdate). Cela permet d'exécuter du code JavaScript en réponse à l'état de l'animation.</li>
+                <li><a href="https://gsap.com/docs/v3/Plugins/GSDevTools/"><strong>GSDevTools</strong></a> : est un outil de développement visuel qui permet de créer une interface utilisateur pour contrôler et déboguer les animations GSAP. Cela peut être très utile pour ajuster et visualiser les animations en temps réel.</li>
+                <li><a href="https://gsap.com/docs/v3/Plugins"><strong>Plugins </strong></a> : GSAP propose plusieurs plugins pour étendre ses fonctionnalités, comme ScrollTrigger pour créer des animations déclenchées par le défilement de la page, Draggable pour rendre les éléments déplaçables par l'utilisateur, et MotionPathPlugin pour animer des éléments le long d'un chemin SVG.</li>
             </ul>
         </section>
-        <section class="install">
+        <section class="install box-section to-reveal">
             <div>
                 <h2>Installation</h2>
                 <p>Avec npm, CDN ou yarn</p>
@@ -133,7 +135,7 @@
                 <img src="./img/install-GSAP-dark.jpg" alt="install-GSAP-dark" class="pic-install--dark active">
             </div>
         </section>
-        <section class="next-page box-section">
+        <section class="next-page to-reveal">
             <a class="btn animated-link" href="demo.html">Aller vers la démo</a>
         </section>        
     </main>

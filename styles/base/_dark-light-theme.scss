@@ -56,6 +56,9 @@ body {
         h2 {
             color: $light-primary-dark1;
         }
+        li > a:hover strong{
+            color: $light-primary;
+        }
     }
     &.dark {
         color: $dark-theme-txt;
@@ -111,6 +114,9 @@ body {
         }
         h2 {
             color: $dark-primary-light1;
+        }
+        li > a:hover strong{
+            color: $dark-primary;
         }
     }
 }
