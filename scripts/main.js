@@ -59,6 +59,7 @@ document.querySelector('.animated-link').addEventListener('click', function(e) {
 
 // ~~~~ DEBUT - Reveal section ~~~~
 const readyToReveal = document.querySelectorAll(".to-reveal");
+let scrolled = 0;
 
 function letReveal() {
     readyToReveal.forEach(function (elementReveal) {
